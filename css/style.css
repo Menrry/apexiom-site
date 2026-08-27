@@ -158,54 +158,41 @@ nav a {
 /* --- DISEÑO RESPONSIVO PARA CELULARES (Pantallas menores a 768px) --- */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Cambia el header a una columna vertical */
-        align-items: center;    /* Centra los elementos */
-        padding: 15px 10px;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 5px; /* Reduce los márgenes generales del header */
     }
 
     .logo-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 15px; /* Deja espacio para el menú de abajo */
-        gap: 15px;
+        margin-bottom: 10px;
+        gap: 10px;
     }
 
     .logo-container img {
-        height: 45px; /* Un poco más grande para que resalte en el móvil */
+        height: 38px; /* Logotipo ligeramente más compacto para ganar espacio */
     }
 
     .logo-container span, .logo-container h1 {
-        font-size: 26px; /* Tamaño proporcional para el celular */
+        font-size: 22px; /* Texto principal proporcionado */
     }
 
+    /* --- CONFIGURACIÓN CLAVE PARA EL MENÚ EN UNA SOLA LÍNEA --- */
     nav {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;       /* Permite que los elementos pasen a la línea de abajo si es necesario */
-        justify-content: center; /* Centra los botones del menú */
-        gap: 10px 15px;        /* Espaciado ordenado entre las opciones del menú */
-        margin-top: 5px;
+        flex-wrap: nowrap;         /* EVITA que los elementos bajen a otra línea */
+        justify-content: center;   /* Centra todo el bloque del menú */
+        gap: 8px;                  /* Distancia pequeña y prudente entre cada enlace */
+        overflow-x: auto;          /* Seguridad por si la pantalla es muy pequeña */
+        padding: 0 5px;
     }
 
     nav a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
-/* ... lo demás que ya tenia ... */
-    nav {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;       
-        justify-content: center; 
-        
-        /* AQUÍ ESTÁ EL CAMBIO CLAVE: Reduce estos valores para acercarlos */
-        gap: 6px 10px;        /* El primer número es la separación vertical, el segundo la horizontal */
-        margin-top: 5px;
-    }
-
-    nav a {
-        font-size: 13px;       /* Opcional: un texto ligeramente más compacto */
-        padding: 4px 6px;      /* Reduce el espacio interno de cada enlace para que no se separen tanto */
+        font-size: 13px;           /* Letra compacta para que quepan todos holgadamente */
+        padding: 4px 6px;          /* Espacio interno reducido */
+        white-space: nowrap;       /* Impide que las palabras del menú se rompan */
     }
 }
