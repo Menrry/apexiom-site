@@ -117,3 +117,79 @@ footer {
     margin-top: 50px;
     font-size: 14px;
 }
+/* --- ESTILOS GENERALES PARA COMPUTADORAS (Escritorio) --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #222; /* Ajusta según el color de fondo de tu header */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio entre el logo y el texto Apexiom 3D */
+}
+
+.logo-container img {
+    height: 40px; /* Tamaño de tu logo en escritorio */
+    width: auto;
+}
+
+.logo-container span, .logo-container h1 {
+    color: #00bcd4; /* Color turquesa de tu marca */
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* --- DISEÑO RESPONSIVO PARA CELULARES (Pantallas menores a 768px) --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia el header a una columna vertical */
+        align-items: center;    /* Centra los elementos */
+        padding: 15px 10px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px; /* Deja espacio para el menú de abajo */
+        gap: 15px;
+    }
+
+    .logo-container img {
+        height: 45px; /* Un poco más grande para que resalte en el móvil */
+    }
+
+    .logo-container span, .logo-container h1 {
+        font-size: 26px; /* Tamaño proporcional para el celular */
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;       /* Permite que los elementos pasen a la línea de abajo si es necesario */
+        justify-content: center; /* Centra los botones del menú */
+        gap: 10px 15px;        /* Espaciado ordenado entre las opciones del menú */
+        margin-top: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
