@@ -1,0 +1,119 @@
+:root {
+    --primary: #00b4d8;
+    --dark: #1a1c23;
+    --light: #f4f6f8;
+    --text: #2b2d42;
+    --gray: #8d99ae;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark);
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--primary);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    background: linear-gradient(rgba(26, 28, 35, 0.85), rgba(26, 28, 35, 0.85)), url('../images/hero-bg.jpg') center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #e0fbfc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary);
+}
+
+.card h2 {
+    color: var(--dark);
+    margin-top: 0;
+}
+
+.customizable-box {
+    background-color: #e0fbfc;
+    border: 1px dashed var(--primary);
+    padding: 12px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #03045e;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0096c7;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--gray);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 14px;
+}
