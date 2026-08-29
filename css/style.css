@@ -153,7 +153,7 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
-/* Hace que el deslizamiento se ajuste de golpe a cada tarjeta ******************************************************** /
+/* Hace que el deslizamiento se ajuste de golpe a cada tarjeta ******************************************************** */
 .video-carousel-section {
     padding: 40px 20px;
     background-color: #1a1a1a; /* Fondo oscuro elegante acorde a tu diseño */
@@ -166,29 +166,35 @@ nav a {
     margin-bottom: 10px;
 }
 
-/* Contenedor principal del carrusel */
-.video-carousel {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;          /* Habilita el scroll horizontal */
-    scroll-snap-type: x mandatory; 
-    padding: 20px 5px;
-    width: 100%;
-    box-sizing: border-box;
-    
-    /* ESTO ES LO NUEVO: Fuerza a que los elementos mantengan su tamaño y no se compriman */
-    flex-wrap: nowrap;         
+.video-carousel-section p {
+    margin-bottom: 25px;
+    color: #ccc;
 }
 
-/* Tarjeta individual de cada video */
+
+
+
+/* Centrar la cuadrícula de videos y limitar su ancho */
+.video-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho para que no se extiendan demasiado en pantallas grandes */
+    margin: 0 auto;    /* ¡Esto es lo que centra la cuadrícula en la pantalla! */
+    box-sizing: border-box;
+}
+
+/* Tarjeta individual */
 .video-card {
-    flex: 0 0 320px;           /* Ancho fijo exacto para cada tarjeta (puedes ajustarlo a 300px o 350px) */
     background-color: #2a2a2a;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    scroll-snap-align: start;
+    text-align: left; /* Alinea el texto de cada tarjeta a la izquierda para que se lea ordenado */
 }
+
 .video-card video {
     width: 100%;
     height: 180px;
@@ -202,6 +208,12 @@ nav a {
     margin: 0;
     color: #fff;
 }
+
+
+
+
+
+
 
 
 /* --- DISEÑO RESPONSIVO PARA CELULARES (Pantallas menores a 768px) --- */
