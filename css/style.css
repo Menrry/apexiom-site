@@ -73,12 +73,19 @@ header {
   gap: 1.5rem;
 }
 
+/* Color blanco normal para todos los enlaces */
 .nav-link {
-  color: var(--text-white);
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
+
+/* Color azul/cyan solo para la opción seleccionada */
+.nav-link.active {
+  color: #00aeef;
+  font-weight: bold;
+}
+
 
 .nav-link:hover, .nav-link.active {
   color: var(--primary-cyan);
