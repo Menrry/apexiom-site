@@ -1,146 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apexiom - Soluções em Manufatura Aditiva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apexiom - Inovação e Precisão em Manufatura</title>
+
+
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
     
-    <!-- Aquí agregas el favicon -->
-    <link rel="icon" type="image/png" href="image/favicon.png">
-    
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-    <div class="logo">
-        <!-- Opción A: Usando una imagen como logotipo -->
-        <img src="image/logo-apexiom.png" alt="Apexiom 3D Logo" style="height: 40px; vertical-align: middle;">
-        
-        <!-- Opción B (Alternativa): Si prefieres combinar icono y texto corporativo -->
-        <span>Apexiom </span>
-    </div>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="engenharia-reversa.html">Modelagem</a>
-        <a href="contato.html">Contato</a>
+  <header>
+    <nav class="nav-container">
+      <a href="index.html" class="brand">❖ Apexiom </a>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Início</a></li>
+        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="modelagem.html" class="nav-link">Modelagem</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+      </ul>
     </nav>
-    </header>
+  </header>
 
-    
-    <section class="video-carousel-section">
-    <h2>Nossos Processos em Ação</h2>
-    <p>Veja a precisão da nossa manufatura aditiva e eletrônica embarcada.</p>
+  <section class="hero">
+    <h1>Inovação e Precisão em Impressão 3D e Fabricação Personalizada</h1>
+    <p>Transformamos ideias e projetos em peças, protótipos, gabaritos e dispositivos funcionais. Combinamos manufatura aditiva, modelagem técnica e eletrônica embarcada para o setor industrial e automotivo.</p>
+    <a href="contato.html" class="btn-primary">Solicite um Orçamento</a>
+  </section>
 
-    <!-- Contenedor deslizable -->
-    <div class="video-carousel">
-        <!-- Video 1 -->
-        <div class="video-card">
-            <video autoplay muted loop playsinline poster="image/poster-impressao.png">
-                <source src="videos/proceso-impressao.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            <h3>Impressão 3D</h3>
-        </div>
-
-
-        <!-- Video 2 -->
-        <div class="video-card">
-            <video autoplay muted loop playsinline poster="image/poster-modelado.png">
-                <source src="videos/proceso-modelado.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            <h3>Modelagem 3D</h3>
-        </div>
-
-        
-            <!-- Video 3 -->
-            <div class="video-card">
-                <video autoplay muted loop playsinline poster="image/poster-microcontrolador.png">
-                    <source src="videos/proceso-microcontrolador.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <h3>Preparação para Fabricação</h3>
-            </div>
-        
-            <!-- Video 4 -->
-            <div class="video-card">
-                <video autoplay muted loop playsinline poster="image/poster-gabarito56.png">
-                    <source src="videos/proceso-gabarito.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <h3>Fabricação de Gabaritos</h3>
-            </div>
-
-            <!-- Video 5 -->
-            <div class="video-card">
-                <video autoplay muted loop playsinline poster="image/poster-calculos.png">
-                    <source src="videos/calculo-cabos.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <h3>Prototipagem</h3>
-            </div>
-
-            <!-- Video 6 -->
-            <div class="video-card">
-                <video autoplay muted loop playsinline poster="image/poster-gabarito02.png">
-                    <source src="videos/proceso-gabarito-geral-ap-02.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <h3>Fabricação Personalizada</h3>
-            </div>
-
-    
-            <!-- Puedes agregar más videos aquí si lo deseas -->
-        </div>
+  <main class="main-container">
+    <section class="card">
+      <h2>Bem-vindos à Apexiom </h2>
+      <p>Desenvolvemos soluções reais através de manutenção técnica, impressão 3D, modelagem digital e suporte à fabricação. Atendemos com foco em precisão, repetibilidade e acabamento profissional.</p>
+      <div class="highlight-box">
+        Apexiom 3D em Moema, São Paulo: reparo elétrico, impressão 3D de alta precisão, modelagem digital e gabaritos técnicos sob medida.
+      </div>
     </section>
 
-    
-
-    <section class="hero">
-        <h1>Inovação e Precisão em Impressão 3D e Fabricação Personalizada</h1>
-        <p>Transformamos ideias, desenhos e modelos digitais em peças, protótipos, gabaritos e dispositivos funcionais por meio da manufatura aditiva.
-            Combinamos impressão 3D, modelagem digital e fabricação personalizada para criar soluções em polímeros com precisão, funcionalidade e excelente acabamento.</p>
-        <a href="contato.html" class="btn">Solicite um Orçamento</a>
+    <section style="margin-bottom: 2rem;">
+      <h3 style="text-align: center; margin-bottom: 1rem;">Nossos Processos em Ação</h3>
+      <div class="process-grid">
+        <div class="process-card">
+          <img src="https://via.placeholder.com/300x180?text=Impressao+3D" alt="Impressão 3D">
+          <h4>Impressão 3D e Prototipagem</h4>
+        </div>
+        <div class="process-card">
+          <img src="https://via.placeholder.com/300x180?text=Modelagem+CAD" alt="Modelagem CAD">
+          <h4>Modelagem 3D & Análise Reversa de Software / Hardware </h4>
+        </div>
+        <div class="process-card">
+          <img src="https://via.placeholder.com/300x180?text=Gabaritos+Formboard" alt="Gabaritos">
+          <h4>Fabricação de Gabaritos (Formboard)</h4>
+        </div>
+        <div class="process-card">
+          <img src="https://via.placeholder.com/300x180?text=Estrutura+de+Custos" alt="Estrutura de Custos">
+          <h4>Estruturação de Custos (BOM)</h4>
+        </div>
+      </div>
     </section>
 
-    <div class="container">
-        <div class="card">
-            <h2>Bem-vindos à Apexiom 3D</h2>
-            <p>Transformamos ideias em soluções reais através de impressão 3D, modelagem digital e fabricação personalizada. 
-                Desenvolvemos peças, protótipos, gabaritos e dispositivos funcionais com precisão e acabamento profissional.
-            </p>
+    <section class="card">
+      <h2>Nossos Pilares Tecnológicos</h2>
+      <ul>
+        <li><strong>Manutenção e Suporte Técnico:</strong> Diagnósticos de continuidade e reparo em chicotes, gabaritos e sistemas eletroeletrônicos[cite: 1].</li>
+        <li><strong>Impressão 3D e Prototipagem:</strong> Peças e carcaças em polímeros técnicos (ABS, PETG, Nylon, Fibra de Carbono).</li>
+        <li><strong>Gabaritos e Dispositivos (Formboard 1:1):</strong> Layouts em escala real para montagem de chicotes automotivos e industriais.</li>
+        <li><strong>Análise de Insumos e Custos (BOM):</strong> Levantamento detalhado de componentes, fiação e estruturação de rotinas produtivas.</li>
+      </ul>
+    </section>
+  </main>
 
-            <div class="customizable-box"> Apexiom 3D em Moema, São Paulo: impressão 3D de alta precisão, modelagem 
-                digital e fabricação personalizada para transformar seus projetos em realidade. 
-            </div>
+  <footer>
+    <p>© 2026 Apexiom 3D. Todos os direitos reservados. | CNPJ: 68.981.199/0001-10[cite: 1]</p>
+    <p>contato@apexiom.com.br[cite: 1] | Moema - Rua Araguari, 224 - Andar 2 - São Paulo/SP[cite: 1] | WhatsApp: +55 (11) 97197-2814[cite: 1]</p>
+  </footer>
 
-
-        </div>
-
-        <div class="card">
-            <h2>Nossos Pilares Tecnológicos</h2>
-            <ul>
-                <li><strong>Impressão 3D e Prototipagem:</strong> Fabricação personalizada de peças, protótipos, suportes, carcaças, componentes e modelos funcionais em diferentes materiais poliméricos.</li>
-                <li><strong>Gabaritos e Dispositivos:</strong> Fabricação de gabaritos, suportes e dispositivos personalizados para facilitar processos de montagem, posicionamento, organização e repetibilidade.</li>
-                <li><strong>Modelagem 3D para Fabricação:</strong> Transformamos desenhos, referências, medidas e ideias em modelos tridimensionais preparados para fabricação por impressão 3D.</li>
-                <li><strong>Soluções Personalizadas:</strong> Adaptamos dimensões, geometria, material e acabamento de acordo com a aplicação desejada, buscando sempre uma solução funcional e adequada ao processo de fabricação.</li>
-                <li><strong>Do modelo à peça:</strong> 1. Você apresenta sua necessidade.
-                                                       2. Analisamos as informações e referências fornecidas.
-                                                       3. Preparamos o modelo 3D quando necessário.
-                                                       4. Produzimos um protótipo ou peça.
-                                                       5. Realizamos os ajustes necessários.
-                                                       6. Fabricamos a versão final.</li>
-                <li><strong>Tecnologia para transformar ideias em produtos reais:</strong> Apexiom 3D — Imprimimos Soluções.</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Apexiom 3D. Todos os direitos reservados. | contato@apexiom.com.br | Moema - Araguari 224 - Andar 2 | WhatsApp: +55 (11) 97197-2814</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
