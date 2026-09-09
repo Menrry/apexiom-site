@@ -30,6 +30,11 @@ header {
   top: 0;
   z-index: 1000;
 }
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
 
 .nav-container {
   max-width: 1200px;
