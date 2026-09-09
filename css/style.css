@@ -200,6 +200,61 @@ footer {
   font-size: 0.85rem;
   margin-top: 3rem;
 }
+/* Hace que el deslizamiento se ajuste de golpe a cada tarjeta ******************************************************** */
+.video-carousel-section {
+    padding: 40px 20px;
+    background-color: #1a1a1a; /* Fondo oscuro elegante acorde a tu diseño */
+    color: #fff;
+    text-align: center;
+}
+
+.video-carousel-section h2 {
+    color: #00bcd4; /* Tu color turquesa corporativo */
+    margin-bottom: 10px;
+}
+
+.video-carousel-section p {
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+
+
+
+/* Centrar la cuadrícula de videos y limitar su ancho */
+.video-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho para que no se extiendan demasiado en pantallas grandes */
+    margin: 0 auto;    /* ¡Esto es lo que centra la cuadrícula en la pantalla! */
+    box-sizing: border-box;
+}
+
+/* Tarjeta individual */
+.video-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-align: left; /* Alinea el texto de cada tarjeta a la izquierda para que se lea ordenado */
+}
+
+.video-card video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.video-card h3 {
+    font-size: 15px;
+    padding: 15px;
+    margin: 0;
+    color: #fff;
+}
 
 /* Responsividade Mobile */
 @media (max-width: 768px) {
@@ -218,7 +273,10 @@ footer {
     transition: 0.3s;
     padding: 1.5rem 0;
   }
-
+  .video-card {
+    flex: 0 0 260px; /* Tarjetas un poco más compactas en celulares */
+ }
+    
   .nav-menu.active {
     left: 0;
   }
