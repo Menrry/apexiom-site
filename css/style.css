@@ -30,10 +30,22 @@ header {
   top: 0;
   z-index: 1000;
 }
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary);
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio horizontal entre la imagen y el texto */
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: #ffffff; /* O usa #00aeef si prefieres la palabra en turquesa */
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
 }
 
 .nav-container {
