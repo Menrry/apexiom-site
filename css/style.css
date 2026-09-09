@@ -255,7 +255,12 @@ footer {
     margin: 0;
     color: #fff;
 }
-
+.centered-list {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 20px;
+}
 /* Responsividade Mobile */
 @media (max-width: 768px) {
   .hamburger {
