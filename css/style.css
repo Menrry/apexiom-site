@@ -261,6 +261,42 @@ footer {
   margin: 0 auto;
   padding-left: 20px;
 }
+/* Centra el título de la tarjeta */
+.card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Elimina el estilo por defecto de la lista */
+.pilares-list {
+  list-style: none; /* Quitamos la viñeta por defecto del navegador */
+  padding: 0;
+  max-width: 800px; /* Ancho máximo para mantener buena legibilidad */
+  margin: 0 auto;   /* Centra todo el bloque de la lista en la página */
+}
+
+/* Alinea las viñetas una debajo de la otra */
+.pilares-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  text-align: justify; /* Justifica el bloque de texto */
+}
+
+/* Crea una viñeta uniforme, alineada a la izquierda de cada texto */
+.pilares-list li::before {
+  content: "•";
+  color: #00aeef; /* Tono turquesa de Apexiom */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 12px; /* Espacio exacto entre la viñeta y el texto */
+  line-height: 1.5;
+}
+
+.pilares-list li span {
+  flex: 1;
+}
+
 /* Responsividade Mobile */
 @media (max-width: 768px) {
   .hamburger {
